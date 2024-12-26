@@ -116,8 +116,8 @@ To get started, click the `Use this template` button (the big green one at the t
 Once your repository is created, you can clone it to your local machine using the following commands:
 
 ```bash
-git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
-cd [YOUR_REPO_NAME]
+git clone https://github.com/paystems/paystems.com.git
+cd paystems.com
 ```
 
 ### Installation
