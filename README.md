@@ -116,8 +116,8 @@ To get started, click the `Use this template` button (the big green one at the t
 Once your repository is created, you can clone it to your local machine using the following commands:
 
 ```bash
-git clone https://github.com/paystems/paystems.com.git
-cd paystems.com
+git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+cd [YOUR_REPO_NAME]
 ```
 
 ### Installation
@@ -183,8 +183,7 @@ src/
 │   ├── blog/
 │   ├── docs/           
 │   ├── insights/         
-│   ├── products/         
-│   └── config.ts         # Contains site-wide configuration options
+│   └── products/         
 ├── data_files/           # Strings stored as JSON files
 ├── images/               # Static image assets for use across the website
 ├── layouts/              # Components defining layout templates
@@ -199,8 +198,8 @@ src/
 │   ├── products/         
 │   ├── robots.txt.ts     # Dynamically generates robots.txt
 │   └── services.astro
-└── utils/                # Shared utility functions and helpers
-
+├── utils/                # Shared utility functions and helpers
+└── content.config.ts     # Contains content collections configuration options
 ```
 
 ## Static Assets and Public Resources
@@ -398,7 +397,7 @@ Please note that smooth scrolling can affect accessibility and performance on so
 
 ### GSAP Integration
 
- For individual product pages, [GSAP](https://gsap.com/) has been integrated to add engaging animations that execute as soon as the product page loads. You can find and modify the GSAP configuration in the script sections of the product page file located at `src/pages/products/[...slug].astro` and the insights page at `src/pages/insights/[...slug].astro`:
+ For individual product pages, [GSAP](https://gsap.com/) has been integrated to add engaging animations that execute as soon as the product page loads. You can find and modify the GSAP configuration in the script sections of the product page file located at `src/pages/products/[id].astro` and the insights page at `src/pages/insights/[id].astro`:
 
 ```astro
 <script>

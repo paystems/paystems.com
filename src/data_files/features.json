@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
+    "heading": "Intelligent Routing",
+    "content": "Improve authorization rates, reduce payment costs via our rule-based, volume-based and machine learning driven routing algorithms which can be integrated into your existing multi-PSP set-up.",
     "svg": "groups"
   },
   {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
+    "heading": "Payment Widgets",
+    "content": "Embed APMs, BNPLs, A2A rails, and local payment methods as buttons into your current checkout to enable a seamless one-click checkout experience bundled with on-us routing to save costs.",
     "svg": "verified"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
+    "heading": "Revenue Recovery",
+    "content": "Minimize involuntary customer churn with a multi-modal intelligent retry engine configured to 30+ parameters such as decline codes, error type, card bin, ticket size, region, payment method and more.",
     "svg": "books"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
+    "heading": "Secure Authentication",
+    "content": "Create customizable PSP-agnostic 3DS workflows tailored to the risk score from FRM engine or authentication solution providers to reduce fraud and improve customer experience by reducing friction.",
     "svg": "frame"
   }
 ]
