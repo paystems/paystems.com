@@ -98,21 +98,24 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "All ri
           <Icon name="githubFooter" />
         </FooterSocialLink>
       
+        {'youtube' in strings.socialLinks && (
         <FooterSocialLink url={strings.socialLinks.youtube}>
           <Icon name="youtubeFooter" />
         </FooterSocialLink>
+      )}
       
+      {'linkedin' in strings.socialLinks && (
         <FooterSocialLink url={strings.socialLinks.linkedin}>
           <Icon name="linkedinFooter" />
         </FooterSocialLink>
+      )}
       
+      {'reddit' in strings.socialLinks && (
         <FooterSocialLink url={strings.socialLinks.reddit}>
           <Icon name="redditFooter" />
         </FooterSocialLink>
-      
-        <FooterSocialLink url={strings.socialLinks.tiktok}>
-          <Icon name="tiktokFooter" />
-        </FooterSocialLink>
+      )}
+        
       </div>
 
     <script>

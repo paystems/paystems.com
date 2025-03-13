@@ -38,7 +38,6 @@ export const socialLinks = {
   youtube: "https://www.youtube.com/@PayStems",
   linkedin: "https://www.linkedin.com/company/paystems/",
   reddit: "https://www.reddit.com/user/paystems/",
-  tiktok: "https://www.tiktok.com/@paystems",
 };
 
 export default {
