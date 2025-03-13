@@ -1,6 +1,6 @@
 # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
-![PayStems](https://github.com/mearashadowfax/PayStems/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
+![PayStems](https://github.com/paystems/PayStems/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
 
 PayStems is an **open-source template** designed for quick and efficient web project setup, blending **minimalism with functionality**. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, PayStems provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
 
@@ -103,7 +103,7 @@ PayStems is an **open-source template** designed for quick and efficient web pro
   * Developers seeking alternatives might consider the [remark-toc](https://github.com/remarkjs/remark-toc) plugin.
 
 > [!NOTE]
-> Currently, there are no planned improvements or known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/PayStems/issues) or [start a discussion](https://github.com/mearashadowfax/PayStems/discussions/new/choose) to share ideas, suggestions, or ask questions.
+> Currently, there are no planned improvements or known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/paystems/PayStems/issues) or [start a discussion](https://github.com/paystems/PayStems/discussions/new/choose) to share ideas, suggestions, or ask questions.
   
 ## Getting Started
 
@@ -162,7 +162,7 @@ Click the button below to start deploying your project on Vercel:
 
 Click the button below to start deploying your project on Netlify:  
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mearashadowfax/PayStems)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/paystems/PayStems)
 
 ## Project Structure
 
