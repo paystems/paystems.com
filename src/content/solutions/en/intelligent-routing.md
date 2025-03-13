@@ -5,8 +5,8 @@ main:
   id: 1
   content: |
     Intelligent Routing is a smart payment routing system that helps businesses choose the best way to process payments by adjusting routing rules in real time. Unlike static routing, which follows fixed rules, Intelligent Routing uses up-to-the-minute data—such as success rates, past transaction patterns, and processor issues. By combining past data with real-time insights, it picks the best processor for each payment. This automation saves businesses from manually updating rules, adapting automatically to current conditions for smoother, more efficient payment processing.
-  imgCard: "@/images/product-image-1.avif"
-  imgMain: "@/images/product-image-main-1.avif"
+  imgCard: "@/images/hero copy 3.avif"
+  imgMain: "@/images/hero copy 3.avif"
   imgAlt: "Mockup boxes of machine screws set"
 tabs:
   - id: "tabs-with-card-item-1"

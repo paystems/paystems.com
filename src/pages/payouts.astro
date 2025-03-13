@@ -7,11 +7,11 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
+import blueprints from "@images/smart-routing.avif";
+import personWorking from "@images/volume-based-config.avif";
+import beforeAfter from "@images/default-fallback.avif";
+import constructionWorkers from "@images/disputes.avif";
+import aerialView from "@images/rule-based-config.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
 import underConstruction from "@images/under-construction.avif";
@@ -40,7 +40,7 @@ const articles: Article[] = [
     subTitle:
       "Our platform empowers you to build payout workflows across every payment method available—from traditional bank transfers and card payouts to digital wallets and payout links. Process funds through multiple rails without writing a single line of code, ensuring that you can meet the diverse needs of suppliers, employees, and partners worldwide.",
     single: true,
-    imgOne: beforeAfter,  // Keeping one image
+    imgOne: blueprints,  // Keeping one image
     imgOneAlt: "Construction site before and after"
   },
   {
@@ -48,7 +48,7 @@ const articles: Article[] = [
     title: "Boost Success with Smart Routing & Recovery",
     subTitle:
       "Maximize payout success with intelligent routing and smart retries. Our system automatically recovers failed transactions and routes funds through the optimal channel—improving success rates and reducing the chance of declined payments. Coupled with bulk and recurring payout support and automatic reconciliation, your payouts always reach their destination efficiently.",
-    img: beforeAfter,
+    img: personWorking,
     imgAlt: "Construction site before and after",
     btnExists: true,
     btnTitle: "Learn More",
@@ -60,7 +60,7 @@ const articles: Article[] = [
     subTitle:
       "Streamline your entire payout operation with our simple, no‑code API integration. Manage all your payouts from a single, unified dashboard that delivers complete control and real-time analytics. PayStems platform makes it easy to integrate global payout capabilities into your system, so you can focus on growing your business.",
     single: true,
-    imgOne: constructionWorkers,  // Keeping one image
+    imgOne: beforeAfter,  // Keeping one image
     imgOneAlt: "Construction workers orchestrating a project"
   },
   {
@@ -68,7 +68,7 @@ const articles: Article[] = [
     title: "Tailored Solutions for Every Business Use Case",
     subTitle:
       "Whether you’re automating vendor payments, processing instant refunds, streamlining global payroll, or enabling marketplace payouts, our flexible platform adapts to your unique business requirements. Enjoy a payout solution designed for global outcomes, custom-built to meet the varied needs of your enterprise.",
-    img: usingTools,
+    img: constructionWorkers,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
@@ -78,7 +78,7 @@ const articles: Article[] = [
     subTitle:
     "Reduce costs while boosting efficiency with our optimized payout infrastructure. Benefit from streamlined FX and built‑in currency conversion that lower fees and optimize domestic and international transfers. Our intelligent routing not only speeds up your payouts but also minimizes processing costs—ensuring every transaction is as efficient as it is fast.",
     single: true,
-    imgOne: usingTools,
+    imgOne: aerialView,
     imgOneAlt: "In progress building structure",
     btnExists: true,
     btnTitle: "Read more",
@@ -90,19 +90,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Global Payouts & Settlements | PayStems"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://paystems.com/payouts",
+    "url": "https://paystems.com/payouts",
+    "name": "Global Payouts & Settlements | PayStems",
+    "description": "Streamline global payouts with PayStems. Our payment operating system allows enterprises to automate mass payouts, optimize settlements, and expand internationally with fast, secure, and compliant payment distribution.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
     },
     "inLanguage": "en-US"
   }}

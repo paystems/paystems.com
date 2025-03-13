@@ -7,11 +7,11 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
+import blueprints from "@images/refund.avif";
+import personWorking from "@images/payment-retry.avif";
+import beforeAfter from "@images/payout-retry.avif";
+import constructionWorkers from "@images/setup-retry.avif";
+import aerialView from "@images/step-up-retries.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
 import underConstruction from "@images/under-construction.avif";
@@ -40,7 +40,7 @@ const articles: Article[] = [
     subTitle:
       "Experience a checkout that converts with our rich, 1‑click solutions built to maximize every transaction. From biometric Face ID payments to frictionless wallet integrations and quickpay widgets, every element is designed to deliver a lightning‑fast, secure, and pixel‑perfect experience that seamlessly reflects your brand.",
     single: true,
-    imgOne: beforeAfter,  // Keeping one image
+    imgOne: blueprints,  // Keeping one image
     imgOneAlt: "Construction site before and after"
   },
   {
@@ -48,7 +48,7 @@ const articles: Article[] = [
     title: "Intelligent Payment Recovery & Downtime Management",
     subTitle:
       "Never lose a sale due to a payment hiccup. Our platform lets customers retry payments instantly without starting over while continuously monitoring the payment ecosystem. With proactive nudges toward the best‑performing methods—even during downtimes—your checkout always stays on track.",
-    img: beforeAfter,
+    img: personWorking,
     imgAlt: "Construction site before and after",
     btnExists: true,
     btnTitle: "Learn More",
@@ -60,7 +60,7 @@ const articles: Article[] = [
     subTitle:
       "Empower your customers with a unified digital wallet experience. Build a custom brand wallet, enable one‑click checkouts with passkeys, and support frictionless guest payments through Click to Pay. Plus, with tap/scan & pay via QR, shoppers can use their everyday payment apps to complete transactions effortlessly—at home or abroad.",
     single: true,
-    imgOne: constructionWorkers,  // Keeping one image
+    imgOne: beforeAfter,  // Keeping one image
     imgOneAlt: "Construction workers orchestrating a project"
   },
   {
@@ -68,7 +68,7 @@ const articles: Article[] = [
     title: "Advanced Settlement & Fund Management",
     subTitle:
       "Streamline your financial operations with flexible settlement options. Our solution supports split settlements for incoming funds across multiple parties, simplifying revenue sharing and ensuring that every cent is accurately distributed.",
-    img: usingTools,
+    img: constructionWorkers,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
@@ -78,7 +78,7 @@ const articles: Article[] = [
     subTitle:
     "Localize and optimize your payment experience without writing a single line of code. Toggle between local and alternative payment methods, run A/B tests, and design a secure, conversion‑driven experience that perfectly matches your brand identity.",
     single: true,
-    imgOne: usingTools,
+    imgOne: aerialView,
     imgOneAlt: "In progress building structure",
     btnExists: true,
     btnTitle: "Read more",
@@ -90,19 +90,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Optimized Checkout Experience | PayStems"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://paystems.com/checkout-experience",
+    "url": "https://paystems.com/checkout-experience",
+    "name": "Optimized Checkout Experience | PayStems",
+    "description": "Deliver seamless and high-converting checkouts with PayStems. As a payment operating system for global enterprises, we provide a frictionless, secure, and customizable checkout experience that enhances customer satisfaction and boosts sales.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
     },
     "inLanguage": "en-US"
   }}

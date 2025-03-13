@@ -5,8 +5,8 @@ main:
   id: 3
   content: |
     Enterprises often face challenges and find difficulty in understanding and managing their payment processing costs, due to complexity, variability of the underlying fee structures and the entities involved. By transforming unstructured fee data into clear insights, solutions like PayStems enable businesses to monitor trends, detect cost anomalies (such as monthly spikes), and identify optimization opportunities. This observability is key to auditing discrepancies, such as PSP errors or invoice mismatches, which in turn helps in reducing overall payment costs.
-  imgCard: "@/images/product-image-3.avif"
-  imgMain: "@/images/product-image-main-3.avif"
+  imgCard: "@/images/hero copy 4.avif"
+  imgMain: "@/images/hero copy 4.avif"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
 tabs:
   - id: "tabs-with-card-item-1"

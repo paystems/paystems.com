@@ -3,8 +3,6 @@ const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
   { name: "Solutions", url: "/solutions" },
-  { name: "Developers", url: "/welcome-to-docs/" },
-  { name: "Resources", url: "/resources" },
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
@@ -33,12 +31,14 @@ const footerLinks = [
   },
 ];
 // An object of links for social icons
-const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+export const socialLinks = {
+  facebook: "https://facebook.com/paystems/",
+  x: "https://x.com/PayStems",
+  github: "https://github.com/paystems",
+  youtube: "https://www.youtube.com/@PayStems",
+  linkedin: "https://www.linkedin.com/company/paystems/",
+  reddit: "https://www.reddit.com/user/paystems/",
+  tiktok: "https://www.tiktok.com/@paystems",
 };
 
 export default {

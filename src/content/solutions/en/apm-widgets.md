@@ -5,8 +5,8 @@ main:
   id: 2
   content: |
     APM Widgets refer to modular, embeddable alternate payment methods provided via PayStems. These widgets allow merchants to augment their existing checkouts with additional payment options (beyond what their current PSP offers) in a low-code manner. By integrating APM widgets, merchants can add various payment methods such as digital wallets, BNPL, bank transfers, etc., with minimal engineering effort and high customizability, all managed through a single SDK. For instance, a merchant who previously only offered cards or PayPal through their current PSP can now easily enable more payment options using APM widgets, which streamline the integration process by reducing traditional engineering challenges.
-  imgCard: "@/images/product-image-2.avif"
-  imgMain: "@/images/product-image-main-2.avif"
+  imgCard: "@/images/hero.avif"
+  imgMain: "@/images/hero.avif"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"

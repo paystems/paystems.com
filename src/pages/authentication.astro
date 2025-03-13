@@ -7,11 +7,11 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
+import blueprints from "@images/analytics.avif";
+import personWorking from "@images/configure-advanced-rules.avif";
+import beforeAfter from "@images/dispute-stage.avif";
+import constructionWorkers from "@images/no-code-config.avif";
+import aerialView from "@images/step-up-retries 2.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
 import underConstruction from "@images/under-construction.avif";
@@ -40,7 +40,7 @@ const articles: Article[] = [
     subTitle:
       "Simplify online card payments with solutions like Click to Pay and Apple Pay that eliminate the need for customers to re-enter payment data. With consolidating multiple cards into a single, secure wallet and FIDO‑certified card-not-present authentication, you benefit from enhanced security, built-in SCA compliance, and higher approval rates—all designed to boost checkout conversion.",
     single: true,
-    imgOne: beforeAfter,  // Keeping one image
+    imgOne: blueprints,  // Keeping one image
     imgOneAlt: "Construction site before and after"
   },
   {
@@ -48,7 +48,7 @@ const articles: Article[] = [
     title: "Advanced 3DS Control and Fraud Reduction",
     subTitle:
       "Take 360° control of your 3DS authentication strategy with our adaptive 3DS engine. Configure triggers and challenge flows tailored to transaction and customer data while employing exhaustive risk checks and a rule engine that manages 3DS flows without any code. Our 3DS 2.2 SDK optimizes bank pages and auto-OTP capture to drive smooth, fraud‑resistant payment journeys.",
-    img: beforeAfter,
+    img: personWorking,
     imgAlt: "Construction site before and after",
     btnExists: true,
     btnTitle: "Learn More",
@@ -60,7 +60,7 @@ const articles: Article[] = [
     subTitle:
       "Our robust suite extends beyond card payments. Experience seamless authentication for bank transfers through out‑of‑band notifications, passkey‑based biometric verification, and TOTP flows designed for low-network areas. Plus, Tap & Pay via Bank App offers a fast, contactless experience supported by tokenisation, encryption, and real‑time fraud detection.",
     single: true,
-    imgOne: constructionWorkers,  // Keeping one image
+    imgOne: beforeAfter,  // Keeping one image
     imgOneAlt: "Construction workers orchestrating a project"
   },
   {
@@ -68,7 +68,7 @@ const articles: Article[] = [
     title: "Developer-Driven Payment Innovation",
     subTitle:
       "Empower your team with PayStems EMVCo‑certified, lightweight SDK—under 400kB and engineered for multiple authentication types across geographies. Enjoy frictionless two‑factor authentication with reliable auto‑OTP capture, ensuring that your payment integrations are as secure as they are seamless, whether you’re building a fully hosted checkout or custom flows via our unified API.",
-    img: usingTools,
+    img: constructionWorkers,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
@@ -78,7 +78,7 @@ const articles: Article[] = [
     subTitle:
     "Maximise your payment acceptance rates with intelligent smart retries. When a transaction soft declines, our adaptive system instantly routes the payment to an alternative PSP—without requiring customers to re-authenticate. This seamless retry mechanism not only boosts conversion rates but also reduces fraud, ensuring that every transaction stands the best chance of success.",
     single: true,
-    imgOne: usingTools,
+    imgOne: aerialView,
     imgOneAlt: "In progress building structure",
     btnExists: true,
     btnTitle: "Read more",
@@ -90,19 +90,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Secure Payment Authentication | PayStems"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://paystems.com/authentication",
+    "url": "https://paystems.com/authentication",
+    "name": "Secure Payment Authentication | PayStems",
+    "description": "Enhance payment security with PayStems’ authentication solutions. Our payment operating system integrates industry-leading authentication methods to reduce fraud, ensure compliance, and protect global transactions in real time.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
     },
     "inLanguage": "en-US"
   }}

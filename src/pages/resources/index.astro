@@ -30,36 +30,36 @@ const mostRecentPost: CollectionEntry<"blog"> = blogPosts[0];
 const otherPosts: CollectionEntry<"blog">[] = blogPosts.slice(1);
 
 // Define variables for page content
-const title: string = "Your Gateway to Construction Excellence";
+const title: string = "Your Gateway to Learn and Discover";
 const subTitle: string =
-  "Explore the latest news, tips, and insights from ScrewFast to enhance your construction projects. From product spotlights to project management strategies, our blog is your go-to resource for all things hardware and construction.";
+  "PayStems complete collection of resources and insights, all in one place—covering a wide range of topics you'll love to explore. Deep dive into Payments engineering and design principles. Learn about new product features, the latest in technology, payment solutions, and business initiatives.";
 const secondTitle: string = "Insights";
 const secondSubTitle: string =
-  "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts. ";
+  "Explore PayStems case studies showcasing success stories from diverse industries like e-commerce, aviation, SaaS, and more.";
 
 const pageTitle: string = `Blog | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Insights & Trends in Payments | PayStems Blog"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/blog",
-    url: "https://screwfast.uk/blog",
-    name: "Blog | ScrewFast",
-    description:
-      "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts.",
-    isPartOf: {
+    "@id": "https://paystems.com/blog",
+    "url": "https://paystems.com/blog",
+    "name": "PayStems Blog | Insights & Trends in Payments",
+    "description":
+      "Explore expert insights, industry trends, and in-depth analysis on global payment operations. Stay ahead with PayStems' thought leadership on payments, fintech, and financial technology innovations.",
+    "isPartOf": {
       "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "ScrewFast",
-      description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+      "url": "https://paystems.com",
+      "name": "PayStems",
+      "description":
+        "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place.",
     },
-    inLanguage: "en-US",
+    "inLanguage": "en-US"
   }}
->
+/>
   <section
     class="mx-auto max-w-[85rem] space-y-8 px-4 pt-16 sm:px-6 lg:px-8 2xl:max-w-full"
   >

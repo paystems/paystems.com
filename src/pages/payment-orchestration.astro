@@ -7,11 +7,11 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
+import blueprints from "@images/code-free-integration.avif";
+import personWorking from "@images/payments.avif";
+import beforeAfter from "@images/payment-integration.avif";
+import constructionWorkers from "@images/data-mastry.avif";
+import aerialView from "@images/scale-payment.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
 import underConstruction from "@images/under-construction.avif";
@@ -40,7 +40,7 @@ const articles: Article[] = [
     subTitle:
       "Automatically recover from errors with fallback routing that retries transactions when failures, false declines, or system errors occur—routing them to a secondary PSP when needed. Enhance this with predictive routing, configured at the queue level to focus on key performance indicators, and risk‑based routing that continuously monitors PSP health to direct transactions to the most optimal processor.",
     single: true,
-    imgOne: beforeAfter,  // Keeping one image
+    imgOne: blueprints,  // Keeping one image
     imgOneAlt: "Construction site before and after"
   },
   {
@@ -48,7 +48,7 @@ const articles: Article[] = [
     title: "Cost‑Optimized & Custom Routing Solutions",
     subTitle:
       "Reduce costs with dynamic routing that automatically determines the optimal route based on real‑time fee values and FX rate monitoring. Stay ahead of outages with proactive alerts and build your own intelligent routing rules—customizable across parameters like currency, geography, issuer, card brand, and authentication mode—without writing any code.",
-    img: beforeAfter,
+    img: personWorking,
     imgAlt: "Construction site before and after",
     btnExists: true,
     btnTitle: "Learn More",
@@ -60,7 +60,7 @@ const articles: Article[] = [
     subTitle:
       "Deliver a unified authentication experience across all PSPs with a seamless 3D Secure flow. Present challenges only when needed, ensuring an optimal and secure payment journey every time. This streamlined 3DS approach enhances customer trust while maintaining high conversion rates.",
     single: true,
-    imgOne: constructionWorkers,  // Keeping one image
+    imgOne: beforeAfter,  // Keeping one image
     imgOneAlt: "Construction workers orchestrating a project"
   },
   {
@@ -68,7 +68,7 @@ const articles: Article[] = [
     title: "Intelligent Fraud Prevention",
     subTitle:
       "Protect your transactions by integrating a custom Fraud & Risk Management engine into your payment stack. Leverage tailored insights from customer attributes and payment methods to reduce fraud and minimize false declines, securing your payment ecosystem without compromising on speed or user experience.",
-    img: usingTools,
+    img: constructionWorkers,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
@@ -78,7 +78,7 @@ const articles: Article[] = [
     subTitle:
     "Boost payout success rates by automatically recovering from failed transactions. Our smart retry mechanism re-routes payments based on error types and available connectors, ensuring that customers can retry seamlessly—without having to start over—maximizing conversion and maintaining an uninterrupted payment experience.",
     single: true,
-    imgOne: usingTools,
+    imgOne: aerialView,
     imgOneAlt: "In progress building structure",
     btnExists: true,
     btnTitle: "Read more",
@@ -90,19 +90,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Seamless Payment Orchestration | PayStems"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://paystems.com/payment-orchestration",
+    "url": "https://paystems.com/payment-orchestration",
+    "name": "Seamless Payment Orchestration | PayStems",
+    "description": "PayStems is the ultimate payment operating system for global enterprises. Our payment orchestration platform connects merchants to a vast network of payment providers, fraud prevention tools, and alternative payment methods through a single API, optimizing transaction efficiency and success rates.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
     },
     "inLanguage": "en-US"
   }}

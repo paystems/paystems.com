@@ -5,8 +5,8 @@ main:
   id: 4
   content: |
     Reconciliation in PayStems automates financial reconciliation, providing businesses with greater accuracy and control over their financial processes. It simplifies transaction matching for financial operations (FinOps) teams, ensuring seamless verification of payments, settlements, and ledger entries with 99% reconciliation accuracy. Financial reconciliation is essential for maintaining transparency, identifying revenue leakages, and ensuring regulatory compliance. Without an efficient reconciliation system, businesses risk financial discrepancies, accounting errors, and increased manual effort. PayStems offers a robust solution that streamlines reconciliation and enhances operational efficiency.
-  imgCard: "@/images/product-image-4.avif"
-  imgMain: "@/images/product-image-main-4.avif"
+  imgCard: "@/images/hero copy 1.avif"
+  imgMain: "@/images/hero copy 1.avif"
   imgAlt: "Mockup boxes of hex bolts"
 tabs:
   - id: "tabs-with-card-item-1"

@@ -5,8 +5,8 @@ main:
   id: 984
   content: |
     Revenue Recovery in PayStems is designed to act as a failsafe for recurring payments. It intelligently performs retries for failed transactions by analyzing over 20 transaction parameters to determine the best retry strategy. This helps subscription-based businesses reduce involuntary churn, recover lost revenue, and maximize customer lifetime value, all while seamlessly integrating with existing subscription management systems. The setup is straightforward, requiring merchants to configure credentials and webhooks for both payment processors and their subscription platform, and to define a recovery plan.
-  imgCard: "@/images/product-image-2.avif"
-  imgMain: "@/images/product-image-main-2.avif"
+  imgCard: "@/images/hero copy 5.avif"
+  imgMain: "@/images/hero copy 5.avif"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"

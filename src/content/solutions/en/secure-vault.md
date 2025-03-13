@@ -5,8 +5,8 @@ main:
   id: 2
   content: |
     This is a standalone service designed to securely tokenize and store your customers’ card data in a PCI-compliant vault. With Hyperswitch Vault, you can securely collect and store card data using a Vault SDK, tokenize cards across various payment processors via a single API, and even generate network tokens to optimize payment operations. The service features high security standards (e.g., PCI DSS v4.0, ISO 27001:2022, GDPR, SOC 2 Type II) and boasts high performance with a 99.999% uptime SLA and the capacity to scale to 50,000 TPS with sub-50ms response times.
-  imgCard: "@/images/product-image-2.avif"
-  imgMain: "@/images/product-image-main-2.avif"
+  imgCard: "@/images/hero copy 2.avif"
+  imgMain: "@/images/hero copy 2.avif"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"

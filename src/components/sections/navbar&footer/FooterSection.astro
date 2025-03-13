@@ -86,27 +86,34 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "All ri
 
       <!-- Social Brands -->
       <div>
-        <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
+        <FooterSocialLink url={strings.socialLinks.facebook}>
+          <Icon name="facebookFooter" />
         </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
-        >
-
-        <FooterSocialLink url={strings.socialLinks.github}
-          ><Icon name="githubFooter" />
+      
+        <FooterSocialLink url={strings.socialLinks.x}>
+          <Icon name="xFooter" />
         </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.google}
-          ><Icon name="googleFooter" />
+      
+        <FooterSocialLink url={strings.socialLinks.github}>
+          <Icon name="githubFooter" />
         </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.slack}
-          ><Icon name="slackFooter" />
+      
+        <FooterSocialLink url={strings.socialLinks.youtube}>
+          <Icon name="youtubeFooter" />
+        </FooterSocialLink>
+      
+        <FooterSocialLink url={strings.socialLinks.linkedin}>
+          <Icon name="linkedinFooter" />
+        </FooterSocialLink>
+      
+        <FooterSocialLink url={strings.socialLinks.reddit}>
+          <Icon name="redditFooter" />
+        </FooterSocialLink>
+      
+        <FooterSocialLink url={strings.socialLinks.tiktok}>
+          <Icon name="tiktokFooter" />
         </FooterSocialLink>
       </div>
-    </div>
 
     <script>
       const year = new Date().getFullYear();

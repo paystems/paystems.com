@@ -7,11 +7,11 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
+import blueprints from "@images/fraud-hub.avif";
+import personWorking from "@images/anti-fraud.avif";
+import beforeAfter from "@images/migration.avif";
+import constructionWorkers from "@images/chargeback-sync.avif";
+import aerialView from "@images/omniintegration.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
 import underConstruction from "@images/under-construction.avif";
@@ -40,7 +40,7 @@ const articles: Article[] = [
     subTitle:
       "Power your global growth with no‑code integrations to 300+ PSPs and local payment methods. Trusted by 500+ enterprises worldwide, our technology streamlines payment operations, maximizes success rates, and simplifies payment orchestration across borders.",
     single: true,
-    imgOne: beforeAfter,  // Keeping one image
+    imgOne: blueprints,  // Keeping one image
     imgOneAlt: "Construction site before and after"
   },
   {
@@ -48,7 +48,7 @@ const articles: Article[] = [
     title: "Customizable Token Vault & Orchestration",
     subTitle:
       "Develop your network tokenisation strategy your way with our plug‑and‑play token vault. Seamlessly integrate with your own token requestor, leverage multi‑dimensional token orchestration, implement alternate IDs for secure guest checkouts, and enjoy decoupled APIs that pass tokens to any processor.",
-    img: beforeAfter,
+    img: personWorking,
     imgAlt: "Construction site before and after",
     btnExists: true,
     btnTitle: "Learn More",
@@ -60,7 +60,7 @@ const articles: Article[] = [
     subTitle:
       "Ensure uninterrupted recurring payments with automatic updates of card details. Our account updater minimizes declined transactions, reduces churn, and boosts acceptance rates—delivering seamless, one‑click card payments that keep your recurring revenue flowing.",
     single: true,
-    imgOne: constructionWorkers,  // Keeping one image
+    imgOne: beforeAfter,  // Keeping one image
     imgOneAlt: "Construction workers orchestrating a project"
   },
   {
@@ -68,7 +68,7 @@ const articles: Article[] = [
     title: "Lower Fees & Cost Savings",
     subTitle:
       "Cut costs with network tokens that enjoy lower interchange fees compared to traditional transactions. By reducing manual card inputs and minimizing penalties from false declines, our solution helps you save on fees while driving higher conversion rates.",
-    img: usingTools,
+    img: constructionWorkers,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
@@ -78,7 +78,7 @@ const articles: Article[] = [
     subTitle:
     "Reduce fraud rates and false declines by providing issuers with greater visibility and confidence through network tokens that are securely bound to your business. Enhance your payment security while ensuring a frictionless experience for your customers.",
     single: true,
-    imgOne: usingTools,
+    imgOne: aerialView,
     imgOneAlt: "In progress building structure",
     btnExists: true,
     btnTitle: "Read more",
@@ -90,19 +90,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
-  title={pageTitle}
+  title="Advanced Payment Tokenisation | PayStems"
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://paystems.com/tokenisation",
+    "url": "https://paystems.com/tokenisation",
+    "name": "Advanced Payment Tokenisation | PayStems",
+    "description": "Protect sensitive payment data with PayStems’ tokenisation technology. Our payment operating system enables enterprises to secure transactions and customer data, reducing PCI compliance burdens while enhancing trust and security.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
     },
     "inLanguage": "en-US"
   }}

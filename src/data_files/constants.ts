@@ -1,14 +1,12 @@
 import ogImageSrc from "@images/social.png";
 
-
-
 export const SITE = {
   title: "PayStems",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  tagline: "The Payment Operating System for Global Enterprises",
+  description: "PayStems is a payment operating system designed for global enterprises to manage all aspects of their payment operations in one place. Our end-to-end solution connects merchants to a vast network of payment providers, fraud solutions, and alternative payment methods through a single, intuitive API.",
+  description_short: "PayStems helps global enterprises streamline payment operations with a single API integration.",
+  url: "https://paystems.com",
+  author: "PayStems Team",
 };
 
 export const SEO = {
@@ -35,8 +33,8 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: The Payment Operating System for Global Enterprises`,
+  description: "PayStems empowers global enterprises to manage their entire payment ecosystem effortlessly. Connect to a vast network of payment providers, fraud solutions, and alternative payment methods with a single API.",
   image: ogImageSrc,
 };
 
