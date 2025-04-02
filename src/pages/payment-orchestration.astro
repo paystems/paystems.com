@@ -1,0 +1,175 @@
+---
+// Import necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import MainSection from "@components/ui/blocks/MainSection.astro";
+import LeftSection from "@components/ui/blocks/LeftSection.astro";
+import RightSection from "@components/ui/blocks/RightSection.astro";
+import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
+
+// Import necessary images
+import blueprints from "@images/code-free-integration.avif";
+import personWorking from "@images/payments.avif";
+import beforeAfter from "@images/payment-integration.avif";
+import constructionWorkers from "@images/data-mastry.avif";
+import aerialView from "@images/scale-payment.avif";
+import usingTools from "@images/using-tools.avif";
+import progressBuilding from "@images/progress-building.avif";
+import underConstruction from "@images/under-construction.avif";
+import { SITE } from "@data/constants";
+
+interface Article {
+  isRightSection: boolean;
+  title: string;
+  subTitle: string;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
+  single?: boolean;
+  img?: any;
+  imgAlt?: string;
+  imgOne?: any;
+  imgOneAlt?: string;
+  imgTwo?: any;
+  imgTwoAlt?: string;
+}
+
+const articles: Article[] = [
+  {
+    isRightSection: true,
+    title: "Fallback, Predictive & Risk‑Based Routing",
+    subTitle:
+      "Automatically recover from errors with fallback routing that retries transactions when failures, false declines, or system errors occur—routing them to a secondary PSP when needed. Enhance this with predictive routing, configured at the queue level to focus on key performance indicators, and risk‑based routing that continuously monitors PSP health to direct transactions to the most optimal processor.",
+    single: true,
+    imgOne: blueprints,  // Keeping one image
+    imgOneAlt: "Construction site before and after"
+  },
+  {
+    isRightSection: false,
+    title: "Cost‑Optimized & Custom Routing Solutions",
+    subTitle:
+      "Reduce costs with dynamic routing that automatically determines the optimal route based on real‑time fee values and FX rate monitoring. Stay ahead of outages with proactive alerts and build your own intelligent routing rules—customizable across parameters like currency, geography, issuer, card brand, and authentication mode—without writing any code.",
+    img: personWorking,
+    imgAlt: "Construction site before and after",
+    btnExists: true,
+    btnTitle: "Learn More",
+    btnURL: "#",
+  },
+  {
+    isRightSection: true,
+    title: "Seamless 3DS Flow & Secure Authentication",
+    subTitle:
+      "Deliver a unified authentication experience across all PSPs with a seamless 3D Secure flow. Present challenges only when needed, ensuring an optimal and secure payment journey every time. This streamlined 3DS approach enhances customer trust while maintaining high conversion rates.",
+    single: true,
+    imgOne: beforeAfter,  // Keeping one image
+    imgOneAlt: "Construction workers orchestrating a project"
+  },
+  {
+    isRightSection: false,
+    title: "Intelligent Fraud Prevention",
+    subTitle:
+      "Protect your transactions by integrating a custom Fraud & Risk Management engine into your payment stack. Leverage tailored insights from customer attributes and payment methods to reduce fraud and minimize false declines, securing your payment ecosystem without compromising on speed or user experience.",
+    img: constructionWorkers,
+    imgAlt:
+      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+  },
+  {
+    isRightSection: true,
+    title: "Smart Retries & Payout Recovery",
+    subTitle:
+    "Boost payout success rates by automatically recovering from failed transactions. Our smart retry mechanism re-routes payments based on error types and available connectors, ensuring that customers can retry seamlessly—without having to start over—maximizing conversion and maintaining an uninterrupted payment experience.",
+    single: true,
+    imgOne: aerialView,
+    imgOneAlt: "In progress building structure",
+    btnExists: true,
+    btnTitle: "Read more",
+    btnURL: "#",
+  },
+];
+
+const pageTitle: string = `Services | ${SITE.title}`;
+---
+
+<MainLayout
+  title="Seamless Payment Orchestration | PayStems"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://paystems.com/payment-orchestration",
+    "url": "https://paystems.com/payment-orchestration",
+    "name": "Seamless Payment Orchestration | PayStems",
+    "description": "PayStems is the ultimate payment operating system for global enterprises. Our payment orchestration platform connects merchants to a vast network of payment providers, fraud prevention tools, and alternative payment methods through a single API, optimizing transaction efficiency and success rates.",
+    "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://paystems.com",
+        "name": "PayStems",
+        "description": "PayStems is a payment operating system that empowers enterprises to manage all aspects of their payment operations in one place."
+    },
+    "inLanguage": "en-US"
+  }}
+>
+  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
+  <MainSection
+    title="Global Payment Orchestration & Intelligent Integration"
+    subTitle="Power your global growth with no‑code integrations to 300+ PSPs and local payment methods. Maximize success rates by building workflows and rules that deliver the best acceptance rates at the lowest costs. Trusted by 500+ enterprises worldwide, our solution simplifies payment orchestration, minimizes processing costs, and reduces operational overheads—driving exponential ROI."
+    btnExists={true}
+    btnTitle="Schedule a Consultation"
+    btnURL="#"
+  />
+  <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
+  They alternate for variety in design.
+  The 'btnExists' property is used to toggle the display of a button in these sections.
+  When btnExists={true}, a button is displayed.
+  This can be used to link to more detailed information or related resources.
+  RightSection can also conditionally render one or two images based on the 'single' property.
+  If 'single' is true, it displays one image, otherwise it displays two.
+  -->
+  {
+    articles.map(article => {
+      return article.isRightSection ? (
+        <RightSection
+          title={article.title}
+          subTitle={article.subTitle}
+          single={article.single}
+          imgOne={article.imgOne}
+          imgOneAlt={article.imgOneAlt}
+          imgTwo={article.imgTwo}
+          imgTwoAlt={article.imgTwoAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      ) : (
+        <LeftSection
+          title={article.title}
+          subTitle={article.subTitle}
+          img={article.img}
+          imgAlt={article.imgAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      );
+    })
+  }
+  <!--FeaturesStats section showcases essential stats valuable to users-->
+  <FeaturesStats
+    title="Take your business to the world"
+    subTitle="Simplify global Go-to-market with 100+ local payment integrations in 50+ countries. Integrate local payment methods in minutes, improve conversion rates and build frictionless checkout experiences."
+    mainStatTitle="99.999%"
+    mainStatSubTitle="Ensures 99.999% uptime for uninterrupted reliability and availability."
+    stats={[
+      {
+        stat: "$670Bn+",
+        description: "Optimized for handling over $670 billion in annual total payment volume efficiently.",
+      },
+      {
+        stat: "175Mn+",
+        description: "Designed to process more than 175 million transactions daily with seamless scalability.",
+      },
+      {
+        stat: "50K+",
+        description: "Capable of reaching 50,000 transactions per second for peak performance.",
+      },
+    ]}
+  />
+</MainLayout>

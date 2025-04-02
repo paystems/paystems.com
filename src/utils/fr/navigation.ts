@@ -1,8 +1,8 @@
 
 const navBarLinks = [
   { name: "Accueil", url: "/fr" },
-  { name: "Produits", url: "/fr/products" },
   { name: "Services", url: "/fr/services" },
+  { name: "Solutions", url: "/fr/solutions" },
   { name: "Blog", url: "/fr/blog" },
   { name: "Contact", url: "/fr/contact" },
 ];
@@ -30,7 +30,7 @@ const footerLinks = [
 const socialLinks = {
   facebook: "#",
   x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
+  github: "https://github.com/paystems",
   google: "#",
   slack: "#",
 };

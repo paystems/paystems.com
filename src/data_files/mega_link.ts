@@ -1,44 +1,44 @@
 // Define data structures for services and success stories
 export const servicesData = [
   {
-    title: "Explore Advice and Explanations",
+    title: "Payment orchestration",
     description:
-      "Dive deep into helpful guides and explanations for all of ScrewFast's features",
+      "Maximise acceptance rates by optimising transactions in real time with no-code integrations to over 300 PSPs and automated routing for higher approvals.",
     icon: "guides",
-    url: "#",
+    url: "/payment-orchestration",
   },
   {
-    title: "Discover Integrations",
+    title: "Recurring Payments",
     description:
-      "Supercharge Your Workflow. Seamless integrations with all your favorite tools",
+      "Optimise recurring revenue and improve retention with frictionless signups, real-time card updates, and smart retries to boost authorisation rates.",
     icon: "puzzle",
-    url: "#",
+    url: "/recurring-payments",
   },
   {
-    title: "Expert Services",
-    description: "Go beyond tools with ScrewFast's expert services",
+    title: "Checkout experience",
+    description: "Deliver rich 1-click checkout experiences with a branded payment flow, no-code APM integrations, and an A/B testing framework for optimisation.",
     icon: "rocket",
-    url: "#",
+    url: "/checkout-experience",
   },
   {
-    title: "Cutting-Edge Tools",
+    title: "3DS & Authentication",
     description:
-      "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge construction tools",
+      "Shift liability to the issuer and reduce friction with intelligent authentication, seamless 3DS flows, and customisable rules for triggering 3DS.",
     icon: "hammer",
-    url: "#",
+    url: "/authentication",
   },
   {
-    title: "Simple Plans",
+    title: "Tokenisation",
     description:
-      "Boost your efficiency with ScrewFast's straightforward, value-driven plans",
+      "Improve acceptance rates and reduce fraud with network tokenisation, plug-and-play token vaults, and lower processing fees across PSPs.",
     icon: "sparks",
-    url: "#",
+    url: "/tokenisation",
   },
   {
-    title: "Community Forum",
-    description: "Learn, share, and connect with other ScrewFast users",
+    title: "Payouts",
+    description: "Enable instant and frictionless payouts via PayStems' direct integrations with global networks, banks, and PSPs for seamless vendor payments and payroll.",
     icon: "community",
-    url: "#",
+    url: "/payouts",
   },
 ];
 
@@ -48,7 +48,7 @@ export const successStoriesData = [
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
     alt: "Image Description",
     description:
-      "See how ScrewFast has empowered businesses of all sizes to achieve outstanding results.",
-    learnMoreUrl: "#",
+      "Payment Orchestration is a sophisticated payments operating system that connects with the merchant’s tech infrastructure, providing a unified layer that intelligently manages the entire payment lifecycle, from checkout to reconciliation.",
+    learnMoreUrl: "/contact",
   },
 ];

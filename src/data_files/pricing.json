@@ -1,38 +1,52 @@
 {
   "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
+  "subTitle": "Tailored & Scalable Pricing Solutions for everything you need.",
   "badge": "Best value",
   "thirdOption": "Enterprise Solutions?",
   "btnText": "Get a Custom Quote",
 
   "starterKit": {
-    "name": "Starter Kit",
+    "name": "Starter",
     "description": "Best option for DIY projects",
-    "price": "49",
+    "price": "$2,500",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "55+ Payment Integrations",
+      "Unified Checkout SDK",
+      "Payout Orchestration",
+      "Control Center",
+      "Fraud Orchestration",
+      "Secure Vault",
+      "Intelligent Routing",
+      "Secure Authentication",
+      "Alternative Payment Methods"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseBtnTitle": "Get Started",
     "purchaseLink": "#"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
+    "name": "Professional",
     "description": "Best for large scale uses",
-    "price": "89",
+    "price": "$6,000",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
+      "180+ Payment Integrations",
+      "Unified Checkout SDK",
+      "Payout Orchestration",
+      "Control Center",
+      "Fraud Orchestration",
+      "Secure Vault",
+      "Intelligent Routing",
+      "Secure Authentication",
+      "Alternative Payment Methods",
+      "Revenue Recovery",
+      "Cost Observability",
+      "Reconciliation"
     ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
+    "purchaseBtnTitle": "Get Started",
     "purchaseLink": "#"
   }
 }

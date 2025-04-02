@@ -1,0 +1,137 @@
+---
+// Importing necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
+import CardSmall from "@components/ui/cards/CardSmall.astro";
+import CardWide from "@components/ui/cards/CardWide.astro";
+import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
+import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+
+// Importing necessary functions from Astro
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { SITE } from "@data/constants";
+
+// Fetching all the product related content and sorting it by main.id
+const product: CollectionEntry<"products">[] = (
+  await getCollection("products", ({ id }) => {
+    return id.startsWith("en/");
+  })
+).sort(
+  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+    a.data.main.id - b.data.main.id,
+);
+
+// Define variables for page content
+const title: string = "Solutions";
+const subTitle: string =
+  "Optimize payments at scale without adding complexity to your infrastructure. An end-to-end orchestration layer that unifies payments across providers, networks, and channels. It enables seamless checkout, dynamic routing, and redundancy for reliability. Enhance performance without overhauling your existing payment stack. A flexible, modular approach to integrate only the payment capabilities you need. Choose from Intelligent Routing, Secure Vault, Reconciliation, Cost Observability, Smart Retries, and APM Widgets.";
+
+// Testimonial data that will be rendered in the component
+const testimonials = [
+  // First testimonial data
+  {
+    content:
+      " \"We've been thoroughly impressed with PayStems' extensive suite of payment solutions. Their offerings are incredibly versatile and easy to integrate, which has empowered us to provide our customers with a seamless, diverse range of payment options. This flexibility has truly enhanced the overall payment experience we deliver in our industry.\" ",
+    author: "Jason Clark",
+    role: "CEO | TopBuild",
+    avatarSrc:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    avatarAlt: "Image Description",
+  },
+  // Second testimonial data
+  {
+    content:
+      " \"What sets PayStems apart is that they've evolved into much more than just a vendor—they're a genuine partner. Their deep expertise in the payments space is remarkable, and the insights they share have been invaluable in guiding our strategic decisions. It's refreshing to work with a team that not only understands the technical side of payments but also the real-world challenges we face.\" ",
+    author: "Maria Gonzalez",
+    role: "Financial Officer | Creative Spaces",
+    avatarSrc:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    avatarAlt: "Image Description",
+  },
+  // Third testimonial data
+  {
+    content:
+      " \"The unwavering support from the PayStems team has been a key driver in advancing our initiatives. Their commitment to our success shines through in every interaction, helping our payment department overcome hurdles and innovate continuously. With PayStems by our side, we feel confident that we are well-equipped to meet and exceed our customers' expectations.\" ",
+    author: "Richard Kim",
+    role: "Co-Founder | WoodWright",
+    avatarSrc:
+      "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    avatarAlt: "Image Description",
+  },
+];
+
+const pageTitle: string = `Products | ${SITE.title}`;
+---
+
+<MainLayout
+  title="Comprehensive Payment Solutions | PayStems"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://paystems.com/products",
+    "url": "https://paystems.com/",
+    "name": "Payment Solutions | PayStems",
+    "description": 
+      "Discover PayStems' innovative payment solutions tailored for businesses of all sizes. Simplify transactions, optimize payment operations, and scale globally with ease.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://paystems.com",
+      "name": "PayStems",
+      "description": 
+        "PayStems is a cutting-edge payment operating system designed to streamline global payment processing for businesses."
+    },
+    "inLanguage": "en-US"
+  }}
+>
+  <div
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex items-center gap-12">
+        <h1
+          class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        >
+          {title}
+        </h1>
+        {
+          subTitle && (
+            <p class="hidden max-w-screen-sm text-pretty text-neutral-600 dark:text-neutral-400 md:block">
+              {subTitle}
+            </p>
+          )
+        }
+      </div>
+      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+    </div>
+    <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
+    <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
+    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+      {
+        product.map((product, index) => {
+          const position = index % 4;
+          if (position === 0 || position === 3) {
+            return <CardSmall product={product} />;
+          } else {
+            return <CardWide product={product} />;
+          }
+        })
+      }
+    </section>
+  </div>
+  <!--Features statistics section-->
+  <FeaturesStatsAlt
+    title="Why Choose PayStems?"
+    subTitle="Our platform integrates advanced subsystems—including orchestration, a unified checkout, secure payment methods and credential management (tokens, PANs), trust providers, and dynamic routing across PSPs, acquirers, and debit networks—engineered for redundancy and reliability. It leverages state-of-the-art, transaction-level payments intelligence to boost conversions, reduce costs, and unify payment operations through enhanced observability, optimization, and reconciliation."
+    benefits={[
+      "Built on battle-tested modular systems. Pick only the components you need—intelligent routing, vault, reconciliation, cost observability, smart retries, APM widgets—without overhauling your stack.",
+      "Comprehensive security framework including PCI compliance, tokenization, and security certifications.  Easily integrate PayStems into any existing payments infrastructure, reducing migration friction.",
+      "Proven reliability at scale, designed for high-performance payment processing. Ensuring zero downtime and safe mode for handling exceptions (with retries, multi-region, Active-active).",
+    ]}
+  />
+  <!--Testimonials section-->
+  <TestimonialsSectionAlt
+    title="What Our Customers Say"
+    testimonials={testimonials}
+  />
+</MainLayout>
