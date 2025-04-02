@@ -2,28 +2,36 @@
   "subTitle": "Ask us anything about our brand and products, and get factual responses.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What is PayStems and how does it simplify payment operations?",
+      "answer": "PayStems is a payment orchestration platform for online businesses and payment institutions. We are a Technology Service Provider (TSP) to merchants, not a payments intermediary. As a TSP, PayStems provides software for seamless checkout, routing, analytics, tokenization, and authentication, fully compliant with payment industry standards. When merchants partner with us, our technology seamlessly integrates into their tech stack, and our team functions as an extension of theirs. The business relationship involves merchants and the PA for payment processing and settlement, while merchants engage separately with PayStems for payment orchestration. Merchants can continue using the software of their choice and we are open to any further customizations, in this regard, based on merchant feedback."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Why choose PayStems payment orchestration platform?",
+      "answer": "PayStems payment orchestration platform is software for online businesses and payment institutions that aim to streamline their payments and payouts and adjust their payment process management. By integrating one payment gateway, companies get all the necessary tools to accept payments, make payouts , and manage all transactions efficiently in one place."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Is PayStems a financial services provider?",
+      "answer": "We do not provide financial services and do not hold our clients' funds. That's why PayStems is not required to be registered or authorised by The Financial Conduct Authority (FCA). We integrate numerous payment service providers (PSPs) globally so that our services are available wherever PSPs work. We provide a unified technical infrastructure and a single interface to manage all your payment activity across multiple vendors."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "What do we need to start working with PayStems?",
+      "answer": "Your company needs to have direct contracts with financial companies and PSPs and a business bank account. Once you have it, you're all set to integrating with us. The process consists of the following steps: the signing of a contract; onboarding and training; and API integration. On average, it takes 1-2 weeks to get you live with PayStems."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Is it safe for my business to work with PayStems?",
+      "answer": "We ensure the safety, stability, and reliability of our payment platform. PayStems is validated by the industry’s highest level of certification — The Payment Card Industry Data Security Standard (PCI DSS) Level 1. We do regular internal audits and facilitate independent security assessments by authorised third parties. PayStems also adheres to the requirements of ISO 9001 that specifies requirements for a Quality Management System (QMS) and ISO 27001 for Applications, Systems, People, Technology, and Processes. We run our business in full compliance with PSD2 and GDPR, continuously looking for opportunities to enhance the overall security of the platform and the safety of sensitive data."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "What is your hosting provider??",
+      "answer": "PayStems payment platform runs entirely on Amazon Web Services (AWS), one of the global leaders in cloud computing. Using AWS grants access to a world-class infrastructure that helps to scale seamlessly and increase developer productivity. One of the key advantages AWS gives us is the unlimited server capacity. For our clients, it means the stability and scalability of our platform regardless of the load."
+    },
+    {
+      "question": "Who are your clients?",
+      "answer": "We provide a complete set of cloud payment data processing services in a diverse set of industries, including, but not limited to: Payment & Money Institutions, that benefit from our solutions. Cryptocurrency projects, mostly exchanges and wallet providers. Fintech applications. Freelance platforms. Marketplaces. Gambling & Betting businesses."
+    },
+    {
+      "question": "What is PayStems vision for interoperable payments?",
+      "answer": "We believe that fostering interoperability and merchant choice is crucial for a thriving payments ecosystem. PayStems, along with a large number of PA/PGs, remains committed to empowering merchants with flexible, and independent payment solutions that drive long-term industry growth. We strongly encourage collaboration across the industry to foster innovation and better experiences for both businesses and consumers. We envision a future where payments function like the operating system, secure, and universally accessible. At PayStems, we remain committed to empowering merchants, advancing payment technology, and fostering a truly inclusive digital economy."
     }
   ]
 }

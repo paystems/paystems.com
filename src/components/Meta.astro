@@ -41,7 +41,7 @@ const languages: { [key: string]: string } = {
 
 function createHref(lang: string, prefix: string, path: string): string {
   const hasPrefix = path.startsWith(`/${prefix}/`);
-
+  
   const basePath = hasPrefix ? path : `/${prefix}${path}`;
   const normalizedBasePath = basePath.replace(/\/\/+/g, "/");
   return `${URL.slice(0, -1)}${normalizedBasePath}`;
